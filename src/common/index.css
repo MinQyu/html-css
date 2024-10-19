@@ -1,0 +1,30 @@
+@import "../common/mordern-reset.css";
+@import "../common/base.css";
+
+a {
+  text-decoration: none;
+}
+
+body {
+  inline-size: 100%;
+  block-size: 100%;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: 2;
+  padding-block-start: 20px;
+
+  justify-self: center;
+  inline-size: 60%;
+
+  .header {
+    position: sticky;
+    background-color: var(--gray);
+    top: 30px;
+    grid-column: 1 / -1;
+  }
+}
